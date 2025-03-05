@@ -1,0 +1,193 @@
+/* Reset untuk margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Mengatur font dan warna dasar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8; 
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+/* Styling untuk header */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Menambahkan efek mengikut */
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Menyusun link secara lurus */
+    align-items: center; 
+}
+
+header nav ul li {
+    margin: 0 40px; /* Menambah jarak antar link */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 25px; 
+    border: 3px ; 
+    border-radius: 8px;
+    font-size: 20px; /* Memperbesar ukuran font */
+    transition: all 0.3s ease;
+}
+    
+header nav ul li a:hover {
+    border: 4px; 
+    color: #f0f0f0;
+    background-color: black  /* Latar belakang kiw oren navbar */
+}
+
+/* Styling untuk setiap section */
+section {
+    padding: 80px 20px; /* Memperbesar padding */
+    text-align: center;
+    margin: 40px 0;
+}
+
+#beranda {
+    background-color: #fff;
+    border-radius: 12px;    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 50px 20px;
+    transition: transform 0.3s ease;
+}
+
+#beranda img {
+    width: 250px; /* Memperbesar gambar profil */
+    height: 250px; /* Memperbesar gambar profil */
+    border-radius: 50%;
+    margin-bottom: 30px;
+    object-fit: cover; /* Memastikan gambar tidak gepeng dan biar ga kemana mana */
+     transition: all 0.3s ease; /* agar gambar bisa ada animasi */
+} 
+
+#beranda img:hover {
+    transform: translateY( -20px);
+}
+
+
+h1 {
+    font-size: 48px; /* Memperbesar ukuran judul */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 22px; /* Memperbesar ukuran teks deskripsi */
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Styling untuk Sertifikat */
+#sertifikat {
+    background-color: #e9f7f6;
+}
+
+.sertifikat-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Menambah jarak antar sertifikat */
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.sertifikat-item {
+    text-align: center;
+    width: 300px; /* Memperbesar lebar setiap sertifikat */
+    transition: transform 0.3s ease;
+}
+
+.sertifikat-item:hover {
+    transform: translateY(-10px);
+}
+
+.sertifikat-img {
+    width: 100%;
+    height: 250px; /* Memperbesar gambar sertifikat */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.sertifikat-img:hover {
+    transform: scale(1.1);
+}
+
+.keterangan {
+    margin-top: 15px;
+    font-size: 18px; /* Memperbesar ukuran teks keterangan */
+    color: #444;
+    font-style: italic;
+}
+
+#tugas{
+    width: 100%;
+    text-decoration: none;  
+    border: 14px solid #444;
+    padding: 20px;
+    margin-bottom: 60px;
+    box-shadow:  0 8px 16px rgba(0, 0, 0, 0.1);
+
+}
+
+.kontak {
+    color: #333; 
+    font-size: 10px;
+    text-decoration:none ;
+    margin: 10px 0;
+    padding: 10px;  
+    box-shadow:  0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsivitas untuk mobile */
+@media (max-width: 768px) {
+    header nav ul li {
+        margin: 0 20px;
+    } 
+
+    .sertifikat-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sertifikat-item {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    form {
+        width: 90%;
+    }
+}

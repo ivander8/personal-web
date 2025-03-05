@@ -1,0 +1,143 @@
+/* buat inti */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Background dan font umum */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    padding: 30px 0;
+}
+
+/* navbar  */
+header nav ul { 
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Menyusun link secara lurus */
+    align-content: center; 
+    padding: 20px;
+}
+
+header nav ul li {
+    margin: 0x 30px; /* Menambah jarak antar link */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 25px; 
+    border: 3px ; 
+    border-radius: 8px;
+    font-size: 20px; /* Memperbesar ukuran font */
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    border: 4px; 
+    color: #f0f0f0;
+    background-color: blue  ; /* Latar belakang kiw kuning navbar */
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Teks paragraf */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Artikel */
+article {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading dalam artikel */
+article h1 {
+    font-size: 2rem;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+/* Gambar dalam artikel */
+article img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+article img:hover{
+    transform: translateY( -10px);
+}
+
+/* Link pada gambar */
+a {
+    text-decoration: none;
+}
+
+/* Sumber di bawah gambar */
+h3 a {
+    font-size: 1rem;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h3 a:hover {
+    text-decoration: underline;
+}
+
+/* Styling untuk link di artikel */
+a:visited, a:link {
+    color: #2980b9;
+}
+
+a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+.kembali{
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.kembali:hover{
+    transform: translateY(-10px);;
+    
+}
+
+/* Footer dan elemen lainnya */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1rem;
+    color: #95a5a6;
+}

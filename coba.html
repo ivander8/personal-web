@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Personal Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+     // Fungsi nya buat bisa ada anakan di navbar 
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdownMenu");
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+</script>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#sertifikat">Sertifikat</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li>
+
+                <a href="javascript:void(0)" onclick="toggleDropdown()">Porto</a>
+                    <ul id="dropdownMenu" style="display:none;">
+                        <li><a href="]belajar.html" target="">Sejarah</a></li>
+                        <li><a href="ciptagelar.html" target="">Sunda</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="beranda">
+        <h1>Selamat Datang di Website Saya</h1>
+       <a href="gambarpersonal.html"> <img src="Darius.jpg" alt="Foto Saya" class="profil-img"></a>
+        <p>Halo! Nama saya Darius Ivander. Saya Siswa dari SMK Wikrama. Ayo mengenal saya.</p>
+    </section>
+
+    <section id="sertifikat">
+        <h2>Sertifikat Saya</h2>
+        <div class="sertifikat-container">
+            <div class="sertifikat-item">
+                <img src="WhatsApp Image 2025-02-06 at 09.38.49_d493b5e4.jpg" alt="Sertifikat 1" class="sertifikat-img">
+                <p class="keterangan">Sertifikat Belajar Pemrograman Web</p>
+            </div>
+            <div class="sertifikat-item">
+                <img src="WhatsApp Image 2025-02-06 at 09.39.52_f92206c1.jpg" alt="Sertifikat 2" class="sertifikat-img">
+                <p class="keterangan">Sertifikat Belajar Pemograman Javascript</p>
+            </div>
+            <div class="sertifikat-item">
+                <img src="Screenshot 2024-09-20 082259 - Copy.png" alt="Sertifikat 3" class="sertifikat-img">
+                <p class="keterangan">k3</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak">
+        <h2>Kontak</h2>
+       <a href="https://www.instagram.com/vannnpg" target="_blank">
+         <img src="th.jpeg" alt="Instagram" width="100"></a>
+
+        <li><a href="mailto:@divander@88.com" class="contact-button">
+                <i class="fas fa-envelope"></i> Kirim Email
+            </a></li>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Website Personal Saya</p>
+    </footer>
+</body>
+</html>
